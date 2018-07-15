@@ -41,7 +41,7 @@ describe("addToCart()", function() {
     addToCart("eggplant");
 
     let itemPrice = getCart()[0].itemPrice;
-
+    console.log(itemPrice)
     expect(itemPrice).toBeLessThanOrEqualTo(100)
                      .toBeGreaterThanOrEqualTo(1);
   });
