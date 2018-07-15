@@ -18,7 +18,7 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   const items = cart.map((item, idx) => {
-    if (idx === (cart.length - 1)) {
+    if (cart.length > 1 && idx === (cart.length - 1)) {
       return `and ${item.itemName} at $${item.price}.`
     } else {
       return `you have ${item.itemName} at $${item.price}`
