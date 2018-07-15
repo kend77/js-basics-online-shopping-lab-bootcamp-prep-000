@@ -24,7 +24,7 @@ function viewCart() {
       return `you have ${item.itemName} at $${item.price}`
     }
   })
-  return cart.length ? `In your cart you have, ${items.join(',')}` : 'Your shopping cart is empty.'
+  return cart.length ? `In your cart, ${items.join(',')}` : 'Your shopping cart is empty.'
 }
 
 function total() {
