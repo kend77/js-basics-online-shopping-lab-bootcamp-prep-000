@@ -22,7 +22,6 @@ function viewCart() {
     if (cart.length > 1 && idx === (cart.length - 1)) {
       return `and ${item.itemName} at $${item.itemPrice}`
     } else {
-      console.log(idx)
       return `you have ${item.itemName} at $${item.itemPrice}`
     }
   })
